@@ -20,4 +20,8 @@ public class PlayerController {
             System.out.println(s);
         }
     }
+
+    void infoByIndex(int index) {
+        System.out.println(pr.findByIndex(index));
+    }
 }

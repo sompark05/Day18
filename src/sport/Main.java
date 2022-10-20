@@ -6,5 +6,6 @@ public class Main {
         PlayerController pc = new PlayerController(pr);
         pc.scout();
         pc.info();
+        pc.infoByIndex(3);
     }
 }

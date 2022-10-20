@@ -23,4 +23,14 @@ public class PlayerRepository {
         }
         return result;
     }
+
+    String findByIndex(int index) {
+        if(db.containsKey(index)) {
+            Player targetPlayer = db.get(index);
+            return targetPlayer.getName() + " " + targetPlayer.getPlayerNum();
+        } else {
+            return "index에 해당하는 선수가 없습니다.";
+        }
+
+    }
 }
